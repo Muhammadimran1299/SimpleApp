@@ -15,7 +15,7 @@ jobs:
       - name : step1 Checkout
         uses : actions/checkout@v4
 
-      - name : Copy to windows Server
+      - name: Copy to windows Server
         run : |
         sshpass -p ${{secrets.PASSWORD}} \
           scp imran.html ${{ secrets.USERNAME }}@${{ secrets.IP }}:'C:/inetpub/wwwroot/' ssh -o "StrictHostKeyChecking=no" user@host
