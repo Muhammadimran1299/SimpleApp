@@ -18,4 +18,4 @@ jobs:
       - name : Copy to windows Server
         run : |
         sshpass -p ${{ secrets.PASSWORD }} \
-          scp Nishanth.html ${{ secrets.USERNAME }}@${{ secrets.IP }}:'C:/inetpub/wwwroot/'
+          scp imran.html ${{ secrets.USERNAME }}@${{ secrets.IP }}:'C:/inetpub/wwwroot/' ssh -o "StrictHostKeyChecking=no" user@host
